@@ -2,15 +2,6 @@
 /*RANDOM GLOBAL TWEAKS*/
 /*####################*/
 
-@import url("https://dablulite.github.io/css-snippets/AccentSwap/import.css");
-@import url("https://minidiscordthemes.github.io/Snippets/MinimalAuthApps/main.css");
-@import url("https://minidiscordthemes.github.io/Snippets/RoleTint/main.css");
-@import url("https://minidiscordthemes.github.io/Snippets/ModTitle/main.css");
-@import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/IconRecolors.css");
-@import url("https://aushevahmad.github.io/awesome-css/modules/channeltweaks.css");
-@import url("https://aushevahmad.github.io/awesome-css/modules/custom-bar-prompt.css");
-@import url("https://aushevahmad.github.io/awesome-css/modules/declutterplus.css");
-
 /* Viggy Loader */
 [class^=content]:has(> video[data-testid="app-spinner"]) {
   position: relative;
