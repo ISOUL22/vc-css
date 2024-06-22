@@ -11,24 +11,6 @@
 @import url("https://aushevahmad.github.io/awesome-css/modules/custom-bar-prompt.css");
 @import url("https://aushevahmad.github.io/awesome-css/modules/declutterplus.css");
 
-/* Oneko Skin 
-#oneko {
-    background-image: url(https://raw.githubusercontent.com/coolesding/onekocord/main/skins/lucy.png) !important;
-    z-index: 100;
-}*/
-
-/* Global Variables */
-:root:root {
-  --accent-h: 261.72;
-  --accent-s: 68.24%;
-  --accent-l: 66.67%;
-  --customEmojiIconURL: url(https://cdn.discordapp.com/emojis/1217110775601172591.gif?size=240&quality=lossless);
-  --customEmojiIconMask: url(https://cdn.discordapp.com/emojis/1217110775601172591.gif?size=240&quality=lossless);
-  --prompt-text: "be silly :3";
-  --highlight-select: linear-gradient(-45deg, #9366e23d 60%, #deaecf3d);
-  --highlight-icon: #deaecf;
-}
-
 /* Viggy Loader */
 [class^=content]:has(> video[data-testid="app-spinner"]) {
   position: relative;
