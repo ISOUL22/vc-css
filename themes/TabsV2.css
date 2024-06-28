@@ -6,7 +6,6 @@
  * @source https://github.com/Panniku/vc-snippets
 */
 
-@import url(https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css);
 
 /*  */
 .searchBarComponent_f0963d {
@@ -156,15 +155,9 @@
   font-weight: 500;
 }
 
-/*  */
+/* dm list style */
 .container_b15955 {
-  padding: 0px;
-  border-radius: 0px;
-}
-
-.interactive_f5eb4b {
-  background-color: var(--background-primary);
-  border-bottom: 1px solid var(--background-accent);
+  border-radius: 16px;
 }
 
 .interactive_f5eb4b:hover {
@@ -173,36 +166,6 @@
 
 .interactiveSelected_c91bad {
   background-color: var(--background-modifier-selected);
-}
-
-/* first item */
-.sidebar_a4d4d9 .privateChannels_f0963d .content_eed6a8>.container_b15955:first-of-type .interactive_f5eb4b {
-  border-radius: 12px 12px 0 0;
-  /* border: 1px solid red; */
-}
-
-/* last child */
-.sidebar_a4d4d9 .privateChannels_f0963d .content_eed6a8>.container_b15955:nth-last-child(1) .interactive_f5eb4b {
-  border-radius: 12px 12px 12px;
-  border-bottom: none;
-}
-
-/* first child below THING */
-.sidebar_a4d4d9 .privateChannels_f0963d .content_eed6a8>.container_cc72c1+.container_b15955 .interactive_f5eb4b {
-  border-radius: 12px 12px 0 0;
-}
-
-/* overrides ^^, last thing above THING */
-.sidebar_a4d4d9 .privateChannels_f0963d .content_eed6a8>.container_b15955:has(+ .container_cc72c1) .interactive_f5eb4b {
-  border-radius: 0 0 12px 12px;
-  border-bottom: none;
-}
-
-/* middle child? */
-.sidebar_a4d4d9 .privateChannels_f0963d .content_eed6a8>div+.container_b15955:has(+ .container_cc72c1)>.interactive_f5eb4b,
-.sidebar_a4d4d9 .privateChannels_f0963d .content_eed6a8>.container_cc72c1+.container_b15955:only-child {
-  border-radius: 12px;
-  border-bottom: none;
 }
 
 /*  */
@@ -307,7 +270,8 @@
 
 .chat_a7d72e:has(.members_cbd271) .chatContent_a7d72e,
 .chat_a7d72e:has(.searchResultsWrap_c2b47d) .chatContent_a7d72e,
-.chat_a7d72e:has(.profilePanel_b433b4) .chatContent_a7d72e {
+.chat_a7d72e:has(.profilePanel_b433b4) .chatContent_a7d72e,
+.chatContent_a7d72e {
   margin-right: 8px;
   margin-top: 8px;
 }
@@ -315,7 +279,8 @@
 .chat_a7d72e:has(.members_cbd271) .chatContent_a7d72e,
 .chat_a7d72e:has(.searchResultsWrap_c2b47d) .chatContent_a7d72e,
 .chat_a7d72e:has(.members_cbd271) .container_a6d69a,
-.chat_a7d72e:has(.profilePanel_b433b4) .chatContent_a7d72e {
+.chat_a7d72e:has(.profilePanel_b433b4) .chatContent_a7d72e,
+.chatContent_a7d72e {
   border-radius: 16px;
 }
 
@@ -393,7 +358,7 @@
 .profilePanel_b433b4 .userPanelInner_c69a7b::before,
 .profilePanel_b433b4 .none_eed6a8,
 .profilePanel_b433b4 .none_eed6a8::before {
-  border-radius: 16px 0px 0px 0px !important;
+  border-radius: 0px 0px 0px 0px !important;
 }
 
 /* toolbar */
@@ -650,13 +615,13 @@
   border-radius: 8px;
 }
 
-/*  */
-.bottomControls_dd069c .justifyCenter_ec1a20 {
-  background-color: var(--background-tertiary);
+/* full screen vc controls */
+/* .bottomControls_dd069c .justifyCenter_ec1a20 {
+  background-color: none;
   padding-top: 8px;
   padding-bottom: 8px;
   border-radius: 24px !important;
-}
+} */
 
 .bottomControls_dd069c .controlButton_b6e2f9 {
   border-radius: 100% !important;
@@ -1365,9 +1330,12 @@ fieldset.answerInputsContainer_f24a96 .defaultTextInputWrapper_d274ca,
   border-radius: 12px;
 }
 
-.bannerSVGWrapper_b32cc2,
-.bannerSVGWrapper_b32cc2 .banner_c3e427 {
+.banner_c3e427 {
   border-radius: 16px 16px 0px 0px;
+}
+
+.decorationBanner_a0e50 {
+  border-radius: 16px;
 }
 
 .profileBadges_f89da9,
