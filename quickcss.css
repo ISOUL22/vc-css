@@ -99,6 +99,11 @@
   font-weight: 500;
 }
 
+/* un-simplify bios in simplified profiles */
+[class^="descriptionClamp_"] {
+    display: block !important;
+}
+
 /*#############*/
 /*CHANNEL STUFF*/
 /*#############*/
@@ -456,7 +461,3 @@ div[class*="lineClamp2Plus"] {
 #vc-spotify-player+[class^="container"] {
   background: transparent;
 }
-
-/*--------------------------===========================< THEME WORKSHOP >===========================--------------------------*/
-
-
